@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+EE Class of 2026: Lecture Attendance Survey
+        </title>
+        <style>
+.push{
+    border-radius: 20px;
+    border-width: 1px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+
+    
+}
+.input{
+display: flex;
+flex-direction: column;
+}
+.push-button{
+    margin-top: 20px;
+    
+}
+.choice{
+ color: rgb(26, 7, 94);
+ font-weight: bold;
+ font-size: 18px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+button {
+    color: white;
+    font-weight: bold;
+    background-color: brown;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+input[type="date"]{
+width: 110px;
+}
+input[type="tel"]{
+    width: 140px;
+}
+
+ .timing{
+    margin-bottom: 20px;
+    display: block;
+ }
+.name-labels{
+display: grid;
+gap: 17px;
+grid-template-columns: 1fr 1fr;
+color: rgb(26, 7, 94);
+max-width: 700px;
+
+            }
+.f-info{
+    margin: 0;
+    
+}
+footer{
+    margin-bottom: 20px;
+}
+
+           
+        </style>
+    </head>
+   
+    <body>
+         <header>
+        <h1>EE Class of 2026: Lecture Attendance Survey</h1>
+        <p>Help us schedule our next session! Please share your availability and preferred attendance format for the EE Class of 2025 below</p>
+    </header>
+        <form id="ee-lecture-survey-form" action="https://formspree.io/f/mojlqpjk">
+<div class="name-labels">
+            <div class="input">
+    <label class="choice" for="last-name">Last Name</label>
+    <input class="push" type="text" id="last-name" required name="name">
+</div>
+<div class="input">
+    <label class="choice" for="first-name">First Name/Other Names</label>
+    <input class="push" type="text" id="first-name" required  name="name">
+</div>
+
+    <div class="input">
+<label class="choice" for="email-label">Email</label>
+<input class="push" type="email" id="email-label" required name="email" placeholder="e.g.,example@gmail.com">
+    </div>
+    <div class="input">
+<label class="choice" for="phone">Phone</label>
+<input class="push" type="tel" id="phone" required placeholder="+23490000000000">
+    </div>
+  
+    <div class="input">
+        <label class="choice" for="dob">Date of Birth</label>
+        <input class="push" required type="date" id="dob" name="dob">
+    </div>
+    <div class="input">
+        <label class="choice" for="education">Highest Education Attained</label>
+        <select class="push" name ="education" id="education" required>
+            <option value="">Select an Option</option>
+            <option value="Degree">University Degree(B.sc,B.A)</option>
+            <option value="Hnd">Higher National Diploma(HND)</option>
+            <option value="ond">Ordinary National Diploma</option>
+            <option value="college">College Certificate/Higher School</option>
+        </select>
+    </div>
+    </div>
+    <div class="push-button">
+        <div class="timing" >
+        <label class="choice">How would you prefer to attend?</label>
+        <label for="pick-online" ><input id="pick-online" class="choice" name="choice"  value="online" type="radio">Online</label>
+    <label for="pick-physical" ><input id="pick-physical" class="choice" name="choice"  value="physical" type="radio">Physical</label>
+    <label for="pick-hybrid" ><input id="pick-hybrid" class="choice" name="choice"  value="hybrid" type="radio">Hybrid</label>
+     </div>
+   <div class="timing">
+     <label class="choice">What time do you prefer?</label>
+        <label for="pick-morning" ><input id="pick-morning" class="choice" name="choice"  value="morning" type="radio">Morning(9am - 12pm)</label>
+    <label for="pick-afternoon" ><input id="pick-afternoon" class="choice" name="choice"  value="afternoon" type="radio">Afternoon(1pm - 4pm)</label>
+    <label for="pick-night" ><input id="pick-night" class="choice" name="choice"  value="night" type="radio">Night(7pm - 10pm)</label>
+   </div>
+   <div class="timing">
+     <label class="choice">Your prefered area of interest/difficulty?</label>
+        <label for="pick-circuit-anlysis" ><input id="pick-circuit-anlysis" class="choice" name="choice"  value="circuit-analysis" type="checkbox">Circuit Analysis</label>
+    <label for="pick-power-system" ><input id="pick-power-system" class="choice" name="choice"  value="power-system" type="checkbox">Power System</label>
+    <label for="pick-control-engineering" ><input id="pick-control-engineering" class="choice" name="choice"  value="control-engineering" type="checkbox">Control Engineering</label>
+    <label for="pick-embedded-system" ><input id="pick-embedded-system" class="choice" name="choice"  value="embedded-systems" type="checkbox">Embedded System</label>
+   </div>
+   <div class="timing">
+    <label class="choice">Additional Comment</label>
+    <textarea rows="4" cols="50" name="additional-comment" id="additional-comment"></textarea>
+    <label for="submit" class="timing"><button id="submit" type="submit">Submit</button></label>
+   </div>
+   <footer>
+    <p class="f-info">&#xA9; 2026 Anidu Haruna Ofomhe</p>
+    <p class="f-info"><a href="malto:sadikuanidu@gmail.com">Contact Surport</a></p>
+   </footer>
+</div>
+        </form>
+    </body>
+</html>
